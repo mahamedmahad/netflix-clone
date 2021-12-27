@@ -13,14 +13,14 @@ export const Inner = styled.div`
 `;
 export const Item = styled.div`
   color: #fff;
-  margin-bottom: 10px;
+  margin: auto;
   max-width: 670px;
+  width: 100%;
+  
+
   &:first-of-type {
     margin-top: 3em;
   }
-`;
-export const Frame = styled.div`
-  margin-bottom: 40px;
 `;
 
 export const Title = styled.h1`
@@ -61,7 +61,7 @@ export const Body = styled.div`
   padding: 0.8em 2.2em;
   white-space: pre-wrap;
   user-select: none;
-  
+
   @media (max-width: 600px) {
     font-size: 16px;
     line-height: 22px;
