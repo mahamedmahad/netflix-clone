@@ -3,13 +3,12 @@ import {
     Container,
     Inner,
     Title,
-    Frame,
     Item,
     Header,
     Body
 } from './styles/accordion';
 import AddIcon from '@mui/icons-material/Add';
-import RemoveIcon from '@mui/icons-material/Remove';
+import CloseIcon from '@mui/icons-material/Close';
 
 const ToggleContext = createContext();
 
@@ -25,9 +24,6 @@ Accordion.Title = function AccordionTitle({children, ...restProps}) {
     return <Title {...restProps}>{children}</Title>
 }
 
-Accordion.Frame = function AccordionFrame({children, ...restProps}) {
-    return <Frame {...restProps}>{children}</Frame>
-}
 
 Accordion.Item = function AccordionItem({children, ...restProps}) {
     const [toggleShow, setToggleShow] = useState(false);
@@ -39,13 +35,13 @@ Accordion.Item = function AccordionItem({children, ...restProps}) {
 }
 
 Accordion.Header = function AccordionHeader({children, ...restProps}) {
-    //pull info from togglecontext
+    //pull info from toggle-context
     const {toggleShow, setToggleShow} = useContext(ToggleContext)
     return (
         <Header onClick={() => setToggleShow((toggleShow) => !toggleShow)}   {...restProps}>
             {children}
             {toggleShow ? (
-                <RemoveIcon/>
+                <CloseIcon/>
             ) : (
                 <AddIcon/>
             )}
