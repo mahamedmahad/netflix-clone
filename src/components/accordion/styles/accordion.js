@@ -14,7 +14,7 @@ export const Inner = styled.div`
 export const Item = styled.div`
   color: #fff;
   margin: auto;
-  max-width: 670px;
+  max-width: 700px;
   width: 100%;
   
 
@@ -58,7 +58,8 @@ export const Body = styled.div`
   font-weight: normal;
   line-height: normal;
   background: #303030;
-  padding: 0.8em 2.2em;
+  padding: 0.8em 1.2em;
+  margin-bottom: 1px;
   white-space: pre-wrap;
   user-select: none;
 
