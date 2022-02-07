@@ -15,6 +15,7 @@ export function HeaderContainer({children}) {
                 <Header.ButtonLink to={ROUTES.SIGN_IN}>
                     Sign In
                 </Header.ButtonLink>
+
             </Header.Frame>
             {children}
         </Header>
