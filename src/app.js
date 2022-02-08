@@ -5,7 +5,7 @@ import {
 
 import * as ROUTES from './constants/routes';
 import {
-    Home, Signin, Signup, Browse, Profile
+    Home, Signin, Signup, Browse, Profile,NotFound
 } from "./pages";
 
 
@@ -36,6 +36,10 @@ export default function App() {
             <Route
                 exact path={ROUTES.HOME}
                 element={<Home/>}
+            />
+            <Route
+                exact path={ROUTES.NOTFOUND}
+                element={<NotFound/>}
             />
 
         </Routes>

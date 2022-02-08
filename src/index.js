@@ -4,6 +4,8 @@ import 'normalize.css';
 import App from './app';
 import {GlobalStyles} from './global-styles';
 
+import { firebaseApp } from "./lib/firebase.prod";
+
 render(
     <>
     <GlobalStyles />
