@@ -6,10 +6,18 @@ import {GlobalStyles} from './global-styles';
 
 import { firebaseApp } from "./lib/firebase.prod";
 
+//context
+import {FirebaseContext} from './context/firebase';
+
+
+
+
 render(
     <>
-    <GlobalStyles />
-    <App />
+        <FirebaseContext.Provider value={firebaseApp}>
+            <GlobalStyles/>
+            <App/>
+        </FirebaseContext.Provider>
     </>,
     document.getElementById('root')
 

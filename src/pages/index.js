@@ -1,6 +1,6 @@
-export {default as Home} from './Home';
-export {default as Signin} from './Signin';
-export {default as Signup} from './Signup';
-export {default as Profile} from './Profile';
-export {default as Browse} from './Browse';
-export {default as NotFound} from './NotFound';
+export {default as Home} from './home';
+export {default as Signin} from './signin';
+export {default as Signup} from './signup';
+export {default as Profile} from './profile';
+export {default as Browse} from './browse';
+export {default as NotFound} from './notfound';
