@@ -9,10 +9,11 @@ import {
 } from "./pages";
 
 import {IsUserRedirect, ProtectedRoute} from "./helpers/route";
+import {useAuthListener} from "./hooks";
 
 export default function App() {
 
-    const user = null;
+    const {user} = useAuthListener();
 
     return (
         <Router>
