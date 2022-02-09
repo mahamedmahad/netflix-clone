@@ -4,17 +4,18 @@ import 'normalize.css';
 import App from './app';
 import {GlobalStyles} from './global-styles';
 
-import { firebaseApp } from "./lib/firebase.prod";
+import { firebaseApp, auth } from "./lib/firebase.prod";
 
 //context
 import {FirebaseContext} from './context/firebase';
 
 
 
+const value = {firebaseApp, auth}
 
 render(
     <>
-        <FirebaseContext.Provider value={firebaseApp}>
+        <FirebaseContext.Provider value={value}>
             <GlobalStyles/>
             <App/>
         </FirebaseContext.Provider>
