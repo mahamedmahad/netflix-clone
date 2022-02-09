@@ -37,7 +37,7 @@ export const Input = styled.input`
   outline: none;
   
   
-  &:hover, &:focus, &:active {
+  &:hover, &:focus {
     outline-color: #039be5;
     outline-style: solid;
     outline-width: 2px;

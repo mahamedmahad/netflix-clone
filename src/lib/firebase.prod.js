@@ -6,7 +6,7 @@ import 'firebase/auth';
 //config
 
 const config = {
-    apiKey: process.env.REACT_FIREBASE_API_KEY,
+    apiKey: "AIzaSyDgvE64lgtbKrmRFzyEjnl1vsdyxiwWNyA",
     authDomain: "netflix-clone-449fc.firebaseapp.com",
     projectId: "netflix-clone-449fc",
     storageBucket: "netflix-clone-449fc.appspot.com",
@@ -15,7 +15,9 @@ const config = {
 }
 const firebaseApp = firebase.initializeApp(config)
 
+const auth = firebaseApp.auth()
+
 //push it to the fireStore db
 //seedDatabase(firebaseApp)
 
-export {firebaseApp}
+export {firebaseApp, auth}
