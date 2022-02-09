@@ -2,7 +2,7 @@ import React from 'react';
 import {Form} from "../components";
 
 
-export default function FormContainer(
+export default function SignInContainer(
     {
         email, password, error,
         onHandleSubmit, setEmailAddress,
@@ -13,7 +13,7 @@ export default function FormContainer(
         <Form>
 
             <Form.Title>Sign In</Form.Title>
-            {error && <Form.Error>I am an error'</Form.Error>}
+            {error && <Form.Error>{error}</Form.Error>}
 
             <Form.Content onSubmit={onHandleSubmit} method="POST">
                 <Form.Input
