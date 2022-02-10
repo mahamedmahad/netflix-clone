@@ -15,6 +15,9 @@ export default function BrowseContainer({slides}) {
     //profile states
     const [profile, setProfile] = useState({})
 
+    //search states
+    const [searchTerm, setSearchTerm] = useState('')
+
     //loading
     const [loading, setLoading] = useState(true)
 
@@ -58,6 +61,7 @@ export default function BrowseContainer({slides}) {
                         {/***Right side*/}
                         <Header.Group>
                             {/**Search**/}
+                            <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
                             {/**Profile **/}
                             <Header.Profile>
                                 <Header.Picture src={user.photoURL}/>

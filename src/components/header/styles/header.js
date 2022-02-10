@@ -118,6 +118,68 @@ export const Profile = styled.div`
 
 export const SignOut = styled(TextLink)``
 
+
+/*********Search***********************************/
+export const Search = styled.div`
+  display: flex;
+  align-items: center;
+  
+  
+  svg {
+    color: #fff;
+    cursor: pointer;
+    
+  }
+  
+  @media(max-width: 700px) {
+    display: none;
+  }
+  
+
+`;
+
+
+export const SearchIcon = styled.button`
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  
+  img {
+    filter: brightness(0) invert(1);
+    width: 16px;
+  }
+
+`;
+
+
+export const SearchInput = styled.input`
+  background: #444459;
+  color: #fff;
+  border: 0;
+  transition: width 0.5s;
+  height: 30px;
+  outline: 0;
+  
+  font-size: 14px;
+
+  &:hover, &:focus {
+    outline-color: #039be5;
+    outline-style: solid;
+    outline-width: 2px;
+    border-radius: 3px;
+  }
+  
+  //active state
+  margin-left: ${({active}) => (active === true ? '10px' : '0') };
+  padding: ${({active}) => (active === true ? '0 10px' : '0') };
+  opacity: ${({active}) => (active === true ? '1' : '0') };
+  width: ${({active}) => (active === true ? '200px' : '0') };
+  
+`;
+
+
+/*********END--------Search***********************************/
+
 export const Container = styled.div`
   display: flex;
   margin: 0 56px;

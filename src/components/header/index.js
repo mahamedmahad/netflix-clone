@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link as ReactRouterLink} from 'react-router-dom';
 
 
@@ -9,7 +9,9 @@ import {
     Text, FeatureText,
     TextLink, Group,
     Picture, Profile,
-    DropDown,SignOut
+    DropDown, SignOut,
+    Search, SearchIcon,
+    SearchInput
 } from './styles/header';
 
 
@@ -58,6 +60,27 @@ Header.Picture = function HeaderPicture({src, ...restProps}) {
 
 Header.SignOut = function headerSignOut({children, ...restProps}) {
     return <SignOut {...restProps}>{children}</SignOut>
+}
+
+Header.Search = function HeaderSearch({searchTerm, setSearchTerm, ...restProps}) {
+    const [searchActive, setSearchActive] = useState(false)
+    return (
+        <Search
+            {...restProps}
+
+        >
+            <SearchIcon onClick={() => setSearchActive(!searchActive)}>
+                <img src={"/images/icons/search.png"} alt={"search"}/>
+            </SearchIcon>
+
+            <SearchInput
+                value={searchTerm}
+                onChange={({target}) => setSearchTerm(target.value)}
+                placeholder="Search films and series"
+                active={searchActive}
+            />
+        </Search>
+    )
 }
 
 Header.Frame = function HeaderFrame({children, ...restProps}) {
