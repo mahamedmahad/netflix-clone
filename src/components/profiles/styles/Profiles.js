@@ -75,11 +75,6 @@ export const Item = styled.li`
 `;
 
 
-export const User = styled.div`
-
-
-`;
-
 
 
 

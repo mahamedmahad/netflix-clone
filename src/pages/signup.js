@@ -52,7 +52,7 @@ export default function Signup() {
                     }).then(() => {
                     navigate(ROUTES.BROWSE)
                 })
-                console.log(res.user)
+               // console.log(res.user)
             })
             .catch((err) => {
                 setUserName('')
