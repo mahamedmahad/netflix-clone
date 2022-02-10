@@ -43,7 +43,7 @@ export default function Signin() {
                 setError(err.message);
             })
 
-        console.log('Submitted')
+        //console.log('Submitted')
     }
 
     const isInvalid = password === '' || emailAddress === '';

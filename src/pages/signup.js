@@ -24,13 +24,16 @@ export default function Signup() {
     const isInvalid = userName === '' || password === '' || emailAddress === '';
 
 
+    /*
+     const randomImage = () => {
+         const random = Math.floor(Math.random() * 5) + 1
 
-    const randomImage = () => {
-        const random = Math.floor(Math.random() * 5) + 1
+         const pic = `/images/users/${random}.png`;
 
-        return `/images/users/${random}.png`;
 
-    }
+         return pic
+
+     }*/
 
     //console.log(randomImage())
 
@@ -45,11 +48,11 @@ export default function Signup() {
                 res.user
                     .updateProfile({
                         displayName: userName,
-                        photoURL: randomImage()
+                        photoURL: Math.floor(Math.random() * 5) + 1
                     }).then(() => {
                     navigate(ROUTES.BROWSE)
                 })
-                //console.log(res.user)
+               // console.log(res.user)
             })
             .catch((err) => {
                 setUserName('')
