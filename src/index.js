@@ -4,14 +4,14 @@ import 'normalize.css';
 import App from './app';
 import {GlobalStyles} from './global-styles';
 
-import { firebaseApp, auth } from "./lib/firebase.prod";
+import { firebaseApp, auth, db } from "./lib/firebase.prod";
 
 //context
 import {FirebaseContext} from './context/firebase';
 
 
 
-const value = {firebaseApp, auth}
+const value = {firebaseApp, auth, db}
 
 render(
     <>
