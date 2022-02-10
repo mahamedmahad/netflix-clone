@@ -25,12 +25,15 @@ export default function Signup() {
 
 
     /*
-    const randomImage = () => {
-        const random = Math.floor(Math.random() * 5) + 1
+     const randomImage = () => {
+         const random = Math.floor(Math.random() * 5) + 1
 
-        return `/images/users/${random}.png`;
+         const pic = `/images/users/${random}.png`;
 
-    }*/
+
+         return pic
+
+     }*/
 
     //console.log(randomImage())
 
@@ -45,7 +48,7 @@ export default function Signup() {
                 res.user
                     .updateProfile({
                         displayName: userName,
-                        photoURL: `${Math.floor(Math.random() * 5) + 1}.png`
+                        photoURL: Math.floor(Math.random() * 5) + 1
                     }).then(() => {
                     navigate(ROUTES.BROWSE)
                 })
