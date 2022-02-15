@@ -151,6 +151,26 @@ export const SearchIcon = styled.button`
 
 `;
 
+export const PlayButton = styled.button`
+  box-shadow: 0 0.6vw 1vw -0.4vw rgba(0,0,0, 0.35);
+  background-color: #e6e6e6;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  max-width: 130px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 35px;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.5s 0s ease;
+  
+  &:hover {
+    background-color: #ff1e1e;
+    color: #fff;
+  }
+`;
+
 
 export const SearchInput = styled.input`
   background: #444459;
@@ -163,9 +183,7 @@ export const SearchInput = styled.input`
   font-size: 14px;
 
   &:hover, &:focus {
-    outline-color: #039be5;
-    outline-style: solid;
-    outline-width: 2px;
+    outline: 2px solid  #039be5;
     border-radius: 3px;
   }
   

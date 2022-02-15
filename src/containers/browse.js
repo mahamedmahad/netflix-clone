@@ -95,6 +95,9 @@ export default function BrowseContainer({slides}) {
                             non pulvinar augue cursus non. Nulla sed libero vestibulum, tincidunt risus sit amet, sodales
                             lorem.
                         </Header.Text>
+
+                        <Header.PlayButton>Play</Header.PlayButton>
+
                     </Header.Feature>
                 </Header>
             </>

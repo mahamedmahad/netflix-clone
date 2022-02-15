@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Link as ReactRouterLink} from 'react-router-dom';
 
-
+//styles
 import {
     Background,
     Container, Logo,
@@ -11,7 +11,7 @@ import {
     Picture, Profile,
     DropDown, SignOut,
     Search, SearchIcon,
-    SearchInput
+    SearchInput, PlayButton
 } from './styles/header';
 
 
@@ -82,6 +82,11 @@ Header.Search = function HeaderSearch({searchTerm, setSearchTerm, ...restProps})
         </Search>
     )
 }
+
+Header.PlayButton = function HeaderPlayButton({children, ...restProps}) {
+    return <PlayButton {...restProps}>{children}</PlayButton>
+}
+
 
 Header.Frame = function HeaderFrame({children, ...restProps}) {
     return <Container {...restProps}>{children}</Container>
