@@ -8,18 +8,18 @@ export function FooterContainer() {
             <Footer.BreakLine />
             <Footer.Row>
                 <Footer.Column>
-                    <Footer.Link href="#">FAQ</Footer.Link>
-                    <Footer.Link href="#">Investor Relations</Footer.Link>
-                    <Footer.Link href="#">ways to watch</Footer.Link>
-                    <Footer.Link href="#">Corporate Information</Footer.Link>
-                    <Footer.Link href="#">Netflix Originals</Footer.Link>
+                    <Footer.Link href="">FAQ</Footer.Link>
+                    <Footer.Link href="">Investor Relations</Footer.Link>
+                    <Footer.Link href="">ways to watch</Footer.Link>
+                    <Footer.Link href="">Corporate Information</Footer.Link>
+                    <Footer.Link href="">Netflix Originals</Footer.Link>
                 </Footer.Column>
 
                 <Footer.Column>
-                    <Footer.Link href="#">Help Center</Footer.Link>
-                    <Footer.Link href="#">Jobs</Footer.Link>
-                    <Footer.Link href="#">Terms of Use</Footer.Link>
-                    <Footer.Link href="#">Contact Us</Footer.Link>
+                    <Footer.Link href="">Help Center</Footer.Link>
+                    <Footer.Link href="">Jobs</Footer.Link>
+                    <Footer.Link href="">Terms of Use</Footer.Link>
+                    <Footer.Link href="">Contact Us</Footer.Link>
                 </Footer.Column>
 
 

@@ -6,7 +6,7 @@ import {useContent} from "../hooks";
 import selectionFilter from "../utils/selection-filter-genres";
 import BrowseContainer from "../containers/browse";
 
-export  default  function Browse() {
+export default function Browse() {
     //series and films
     const {series} = useContent('series')
     const {films} = useContent('films')
@@ -18,12 +18,11 @@ export  default  function Browse() {
     //console.log(slides)
 
 
-
-
-
     //pass it to the browse container
 
     return (
-        <BrowseContainer slides={slides}/>
+        <>
+            <BrowseContainer slides={slides}/>
+        </>
     )
 }

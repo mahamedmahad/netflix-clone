@@ -1,4 +1,8 @@
 export function seedDatabase(firebase) {
+    /**
+     * Generate a random UUID
+     * @returns A string of 16 characters.
+     */
     function getUUID() {
 
         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {

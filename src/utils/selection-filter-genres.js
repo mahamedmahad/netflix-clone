@@ -1,6 +1,9 @@
 export default function selectionFilter({series, films}) {
     //getting the genres for series and films
 
+
+    /* The above code is creating a list of objects. Each object has a title and data. The data is a filtered list of items
+    from the series/films array. */
     return {
         series: [
             {

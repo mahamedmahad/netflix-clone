@@ -9,6 +9,7 @@ import SelectProfileContainer from './profiles'
 //context
 import {FirebaseContext} from '../context/firebase';
 import * as ROUTES from "../constants/routes";
+import {FooterContainer} from "./footer";
 
 
 export default function BrowseContainer({slides}) {
@@ -28,6 +29,7 @@ export default function BrowseContainer({slides}) {
     const user = auth.currentUser || {};
 
 
+    /* This is a React Hook that runs the code inside the brackets when the profile state changes. */
     useEffect(() => {
         //console.log('Profile:', profile)
         setTimeout(() => {
@@ -155,6 +157,7 @@ export default function BrowseContainer({slides}) {
 
                 </Card.Group>
 
+                <FooterContainer/>
 
             </>
         )

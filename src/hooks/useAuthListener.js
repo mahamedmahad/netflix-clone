@@ -10,6 +10,7 @@ export default function useAuthListener() {
 
     const {auth} = useContext(FirebaseContext)
 
+    /* This is a React Hook that is used to listen to the state of the user. */
     useEffect(() => {
         const listener = auth.onAuthStateChanged((authUser) => {
             if (authUser) {
